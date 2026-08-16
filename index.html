@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rahul Chavan - AI Data Science Undergraduate Portfolio">
+    <title>Rahul Chavan | Portfolio</title>
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cinematic Loader -->
+    <div id="loader-wrapper">
+        <div class="loader-content">
+            <div class="loader-logo">RAHUL</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="site-content">
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+        <nav class="navbar">
+            <div class="logo">Rahul.</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+        </nav>
+
+        <main>
+            <!-- HERO SECTION -->
+            <section id="hero" class="hero-section">
+                <div class="hero-content">
+                    <p class="subtitle fade-up">AI Data Science Undergraduate</p>
+                    <h1 class="main-title fade-up delay-1">Hi, I'm <span class="highlight">Rahul Chavan</span></h1>
+                    <p class="hero-desc fade-up delay-1">Building intelligent AI-driven solutions and deploying
+                        CNN-based models.</p>
+                    <div class="hero-actions fade-up delay-2">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="resume.pdf" class="btn btn-secondary" download="Rahul_Chavan_Resume.pdf" rel="noopener">Download Resume</a>
+                    </div>
+                </div>
+                <div class="hero-graphic fade-in">
+                    <div class="glow-orb orb-1"></div>
+                    <div class="glow-orb orb-2"></div>
+                    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section id="about" class="about-section">
+                <div class="container">
+                    <h2 class="section-title reveal-text">About Me</h2>
+                    <div class="about-grid">
+                        <div class="about-image-wrapper fade-up">
+                            <img src="profile_pic.jpeg" alt="Rahul Chavan" class="profile-photo">
+                        </div>
+                        <div class="about-text fade-up delay-1">
+                            <p>I am an AI Data Science undergraduate with a strong foundation in Machine Learning, Data
+                                Structures, and DBMS.</p>
+                            <p>I am experienced in building and deploying CNN-based models using MobileNetV3 on
+                                Raspberry Pi for real-world applications. I am proficient in Python, SQL, and modern
+                                development tools, with a keen interest in AI-driven solutions.</p>
+                            <p><strong>Languages:</strong> English (Fluent), Telugu (Fluent), Kannada</p>
+                            <div class="social-links mt-4">
+                                <a href="https://github.com/rahulchavan-rc" target="_blank"
+                                    class="social-link">GitHub</a>
+                                <a href="https://linkedin.com/in/rahulchavan3134" target="_blank"
+                                    class="social-link">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS SECTION -->
+            <section id="skills" class="skills-section">
+                <div class="container">
+                    <h2 class="section-title reveal-text">Technical Skills</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category glass-panel fade-up">
+                            <h3>Programming Languages</h3>
+                            <div class="tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">C</span>
+                                <span class="skill-tag">SQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category glass-panel fade-up delay-1">
+                            <h3>Web Technologies</h3>
+                            <div class="tags">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="skill-category glass-panel fade-up">
+                            <h3>Core Areas</h3>
+                            <div class="tags">
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Data Structures</span>
+                                <span class="skill-tag">DBMS</span>
+                                <span class="skill-tag">Operating Systems</span>
+                                <span class="skill-tag">Computer Networks</span>
+                            </div>
+                        </div>
+                        <div class="skill-category glass-panel fade-up delay-1">
+                            <h3>Tools and Platforms</h3>
+                            <div class="tags">
+                                <span class="skill-tag">Git / GitHub</span>
+                                <span class="skill-tag">VS Code</span>
+                                <span class="skill-tag">Jupyter Notebook</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">Overleaf</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <!-- PROJECTS SECTION -->
+            <section id="projects" class="projects-section">
+                <div class="container">
+                    <h2 class="section-title reveal-text">Selected Projects</h2>
+
+                    <div class="projects-list">
+                        <!-- Project 1: Mango Grading -->
+                        <div class="project-item glass-panel fade-up">
+                            <div class="project-content">
+                                <h3>AI-Powered Embedded System For Internal Mango Quality</h3>
+                                <p class="project-desc">An AI-based mango quality classification system built for
+                                    accurate prediction.</p>
+                                <ul class="project-details">
+                                    <li>Developed using Convolutional Neural Network (MobileNetV3).</li>
+                                    <li>Applied preprocessing and data augmentation techniques to improve model
+                                        performance and prevent overfitting.</li>
+                                    <li>Deployed the model using TensorFlow Lite on Raspberry Pi 4 Model B for real-time
+                                        embedded inference.</li>
+                                </ul>
+                                <div class="tags">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">TensorFlow Lite</span>
+                                    <span class="skill-tag">CNN (MobileNetV3)</span>
+                                    <span class="skill-tag">Raspberry Pi</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/rahulchavan-rc" target="_blank" class="btn-link">View on
+                                        GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDUCATION SECTION -->
+            <section id="education" class="timeline-section">
+                <div class="container">
+                    <div class="timeline-grid">
+
+                        <!-- Education -->
+                        <div class="timeline-col fade-up">
+                            <h2 class="section-title reveal-text">Education</h2>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <h3>B.E. in AI & Data Science</h3>
+                                        <h4>SDM Institute of Technology, Ujire (VTU)</h4>
+                                        <span class="timeline-date">Batch of 2027 | SGPA: 7.2</span>
+                                        <p><strong>Relevant coursework:</strong> Machine Learning, Deep Learning, Data
+                                            Structures, Database Management, Statistics.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Experience placeholder if needed, otherwise leave empty or remove -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- CERTIFICATIONS & ACHIEVEMENTS -->
+            <section id="achievements" class="achievements-section">
+                <div class="container">
+                    <h2 class="section-title reveal-text">Certifications & Achievements</h2>
+                    <div class="achievements-grid">
+                        <div class="glass-panel fade-up">
+                            <h3>Certifications</h3>
+                            <ul class="styled-list">
+                                <li>ChatGPT and Zapier Agentic AI for Everyone – Coursera</li>
+                                <li>Explore Machine Learning Using Python – Infosys Springboard</li>
+                            </ul>
+                        </div>
+                        <div class="glass-panel fade-up delay-1">
+                            <h3>Achievements</h3>
+                            <ul class="styled-list">
+                                <li>Hackathon Participant: Yugma Techfest 1.0</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- FOOTER / CONTACT SECTION -->
+        <footer id="contact" class="footer-section">
+            <div class="container">
+                <h2 class="section-title reveal-text">Let's Connect</h2>
+                <p class="fade-up">I'm currently open for new opportunities. Whether you have a question or just want to
+                    say hi, I'll try my best to get back to you!</p>
+
+                <div class="contact-links fade-up delay-1">
+                    <a href="mailto:rahulchavan3134@gmail.com" class="btn btn-primary">Email Me</a>
+                    <a href="tel:+916363660959" class="btn btn-secondary">Call +91-6363660959</a>
+                </div>
+
+                <div class="footer-social mt-4 fade-up delay-2">
+                    <a href="https://github.com/rahulchavan-rc" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/rahulchavan3134" target="_blank">LinkedIn</a>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Rahul Chavan. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
